@@ -1,0 +1,11 @@
+@tailwind base;
+@layer base {
+  h1 {
+    @apply text-[#222222];
+  }
+  p {
+    @apply text-[#888888];
+  }
+}
+@tailwind components;
+@tailwind utilities;
