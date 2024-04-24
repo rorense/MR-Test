@@ -18,10 +18,10 @@ const Cart = () => {
   };
 
   return (
-    <div className="bg-white z-9999 w-[400px] p-2 border border-[#CCCCCC]">
+    <div className="bg-white z-9999 border border-[#CCCCCC] p-4 w-[300px] absolute top-14 right-5">
       {products.map((product) => (
         <div key={product.id} className="flex p-3">
-          <div className="flex fill w-[200px]">
+          <div className="flex w-[100px] sm:max-w-[150px]">
             <img src={product.img} alt="Image" />
           </div>
           <div className="flex flex-col">

@@ -40,12 +40,12 @@ const Product = () => {
   };
 
   return (
-    <div className="flex justify-center flex-1 mx-36 flex-wrap gap-12">
-      <div className="w-[400px]">
+    <div className="mx-8 sm:flex sm:gap-11">
+      <div className="mb-4 sm:w-1/2 sm:justify-center sm:flex">
         {data && <img src={data.imageURL} alt="" />}
       </div>
 
-      <div className="w-1/2">
+      <div className="sm:w-1/2">
         {data && (
           <>
             <h1 className="text-2xl">{data.title}</h1>

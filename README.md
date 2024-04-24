@@ -33,7 +33,7 @@
 Due to the limited time, there were some features that I would implement if I had more time:
 
 - Use TypeScript instead of JavaScript for type checking.
-- Introduce automated tests.
+- Introduce automated unit tests using Vitest.
 
 #TODO:
 
