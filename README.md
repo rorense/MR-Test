@@ -1,10 +1,10 @@
 # Moustache Republic Frontend Developer Technical Test
 
-### By Ryan Orense
+### - By Ryan Orense
 
-### rkorense@gmail.com
+### - rkorense@gmail.com
 
-## Link to deployed website using Vercel Pages
+## Link to deployed website using Vercel
 
     https://mr-test.vercel.app/
 
