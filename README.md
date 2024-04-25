@@ -1,33 +1,31 @@
-# React + Vite
+# Moustache Republic Frontend Developer Technical Test
 
-## Link to deployed website using Github Pages
+### By Ryan Orense
 
-    https://www.link.com
+### rkorense@gmail.com
+
+## Link to deployed website using Vercel Pages
+
+    https://mr-test.vercel.app/
 
 ## Tech Stacks / Packages Used
 
-- React using Vite
-  React is my preferred tech stack for web development. For this test I have used Vite with JavaScript for the project environment.
+- React using Vite: React is my preferred tech stack for web development. For this test I have used Vite with JavaScript for the project environment.
 
-- Axios
-  Axios makes fetching data a lot easier. It's being used in the useFetch hook, used to collect data from from the provided JSON file in the AWS environment.
+- Axios: Axios makes fetching data a lot easier. It's being used in the useFetch hook, used to collect data from from the provided JSON file in the AWS environment.
 
-- Tailwind CSS
-  Prefered way of applying CSS styling. Inline styling declutters file structure and easy to see the effects. Tailwind makes responsive design a lot easier to manage.
+- Tailwind CSS: Prefered way of applying CSS styling. Inline styling declutters file structure and easy to see the effects. Tailwind makes responsive design a lot easier to manage.
 
-- Redux
-  Redux was used for the storing global state. Used primarily for the shopping cart feature. Redux persist, allows the state to persist even after refreshing the page.
+- Redux: Redux was used for the storing global state. Used primarily for the shopping cart feature. Redux persist, allows the state to persist even after refreshing the page.
 
-- React Hot Toast
-  Toast used to inform the user if the adding products, removing products, and to ensure user selects a size before adding to card.
+- React Hot Toast: Toast used to inform the user if the adding products, removing products, and to ensure user selects a size before adding to card.
 
-- Spinner
-  Spinner component for loading state.
+- Spinner: Spinner component for loading state.
 
 ## Note
 
-- Global styling of p and h1 tags have been done on index.css file.
-- Responsive design was achieved through use of media queries. Cart icon is only visible when used in small screens.
+- Global styling of p and h1 tags have been done on index.css file, as per the design requirements.
+- Responsive design was achieved through use of media queries in Tailwind. Cart icon is only visible when used in small screens.
 
 ## Improvements for next time
 
