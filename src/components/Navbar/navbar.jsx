@@ -4,7 +4,10 @@ import { useSelector } from "react-redux";
 import { CiShoppingCart } from "react-icons/ci";
 
 const Navbar = () => {
+  // Use State to toggle cart component
   const [open, setOpen] = useState(false);
+
+  // Fetching products from the redux store
   const products = useSelector((state) => state.cart.products);
 
   return (

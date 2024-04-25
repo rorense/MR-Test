@@ -6,12 +6,14 @@ const Cart = () => {
   const products = useSelector((state) => state.cart.products);
   const dispatch = useDispatch();
 
+  // Function for calculating total price of all items in cart
   const totalPrice = () => {
     let total = 0;
     products.forEach((item) => (total += item.quantity * item.price));
     return total;
   };
 
+  // Function to reset cart
   const onReset = () => {
     dispatch(resetCart());
     toast.success("Cart has been reset");
@@ -19,6 +21,7 @@ const Cart = () => {
 
   return (
     <div className="bg-white z-9999 border border-[#CCCCCC] p-4 w-[300px] absolute top-14 right-5">
+      {/* Map through all items in the cart */}
       {products.map((product) => (
         <div key={product.id} className="flex p-3">
           <div className="flex w-[100px] sm:max-w-[150px]">

@@ -1,3 +1,4 @@
+// Reusable button component for size selection
 const SizeButton = ({ value, key, selected, onClick }) => {
   return (
     <button

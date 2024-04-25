@@ -8,6 +8,7 @@ const useFetch = () => {
 
   // Fetching data from API
   useEffect(() => {
+    // using mount to prevent memory leaks/hydration errors
     let isMounted = true;
 
     const fetchData = async () => {
@@ -16,7 +17,7 @@ const useFetch = () => {
         const res = await axios.get(
           "https://3sb655pz3a.execute-api.ap-southeast-2.amazonaws.com/live/product"
         );
-        console.log(res.data);
+
         if (isMounted) {
           setData(res.data);
           setLoading(false);

@@ -12,14 +12,18 @@ const Product = () => {
   const [sizeID, setSizeID] = useState("");
   const dispatch = useDispatch();
 
+  // Spinner component while fetching data
   if (loading)
     return (
       <div className="flex justify-center items-center">
         <TailSpin />
       </div>
     );
+
+  // Error component if fetch fails
   if (error) return <div>Error: {error}</div>;
 
+  // Function to add item to cart
   const handleAddToCart = () => {
     if (size === "") {
       toast.error("Please Select a size");
@@ -55,7 +59,7 @@ const Product = () => {
             <p>{data.description}</p>
             <br />
             <p>
-              Sizes<span className="text-[#C90000]">*</span> :{" "}
+              Sizes<span className="text-[#C90000]">*</span> :
               <span>{size}</span>
             </p>
             <div className="flex flex-row gap-3 items-center">
@@ -74,7 +78,7 @@ const Product = () => {
               ))}
             </div>
             <button
-              className="rounded-md border-2 border-black  hover:text-white hover:bg-black p-3 w-40 text-center mt-10 cursor-pointer transition duration-200"
+              className="rounded-md border-2 border-black hover:text-white hover:bg-black p-3 w-40 text-center mt-10 cursor-pointer transition duration-200"
               onClick={handleAddToCart}
             >
               Add to Cart
